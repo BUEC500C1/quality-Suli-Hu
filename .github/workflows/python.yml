@@ -22,4 +22,9 @@ jobs:
         pip install --upgrade pip
         pip install flake8
         flake8 . --extend-ignore=W,E1,E2,E3,E5
+        
+    - name: Test with pytest
+      run: |
+        pip install pytest
+        pytest
 
